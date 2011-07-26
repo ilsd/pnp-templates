@@ -1,5 +1,5 @@
 Setup instructions for custom check-netapp pnp4nagios templates
-------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 These instructions help you in installing the customized pnp4nagios templates in your nagios environment.
 The templates are built up in this manner:
@@ -18,5 +18,5 @@ Step by step instructions:
 
 
 
-###################################################################################################################
+###############################################################################
 
