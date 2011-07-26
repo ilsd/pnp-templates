@@ -16,7 +16,15 @@ Step by step instructions:
 4. Please adapt the given "netapp.cfg" for command configurations.
 5. Restart nagios processes and check the graphs.
 
-
-
 ###############################################################################
+
+TROUBLESHOOTING
+
+Problem: You are getting an Error instead of a graph.
+
+Check if the rrd and xml file for the respective service-check have been created.
+You should find them in /usr/local/pnp4nagios/var/perfdata/<hostname> 
+(path may varry depending on your configuration)
+
+-------------------------------------------------------------------------------
 
