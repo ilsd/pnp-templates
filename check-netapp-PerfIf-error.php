@@ -6,7 +6,7 @@
 # RTA
 #
 $ds_name[1] = "$servicedesc";
-$opt[1]  = "-I --units-exponent=0 -Y --lower=0 --vertical-label \"Errors $UNIT[1]\" --title \"'$ds_name[1]'\" --watermark=http://netapp-monitoring.info";
+$opt[1]  = "--units-exponent=0 -Y --lower=0 --vertical-label \"Errors $UNIT[1]\" --title \"'$ds_name[1]'\" --watermark=http://netapp-monitoring.info";
 $def[1]  = rrd::def("var1", $RRDFILE[1], $DS[1], "AVERAGE") ;
 $def[1] .= rrd::area( "var1", "#AAB559",  $ds_name[1] );
 $def[1] .= rrd::line1( "var1", "#0459b3" );

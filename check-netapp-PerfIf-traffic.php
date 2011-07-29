@@ -60,7 +60,7 @@ else
 
 
 $ds_name[1] = "$servicedesc";
-$opt[1] = "-I --vertical-label \"MByte/sec\" -l -$range -u $range -X0 -b 1024 --title \"$servicedesc\"  --watermark=http://netapp-monitoring.info";
+$opt[1] = "--vertical-label \"MByte/sec\" -l -$range -u $range -X0 -b 1024 --title \"$servicedesc\"  --watermark=http://netapp-monitoring.info";
 $def[1] =  "HRULE:-$mByteBandwidth#0459b3: ";
    if ($warn)
       $def[1] .= "HRULE:$mByteWarn#ffff00:\"Warning\:                " . sprintf("%6.1f", $warn) . " ".$bwuom."B/s\\n\" ".
