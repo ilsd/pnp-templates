@@ -35,7 +35,7 @@ foreach ($this->DS as $KEY=>$VAL) {
 	}
 	$ds_name[$KEY] = str_replace("_","/",$VAL['NAME']);
 	# set graph labels
-	$opt[$KEY]     = "-I --vertical-label $label -l 0 $upper --title \"Usage of Volume '$ds_name[$KEY]'\" --watermark=http://netapp-monitoring.info";
+	$opt[$KEY]     = "--vertical-label $label -l 0 $upper --title \"Usage of Volume '$ds_name[$KEY]'\" --watermark=http://netapp-monitoring.info";
 	# Graph Definitions
 	$def[$KEY]     = rrd::def( "var1", $VAL['RRDFILE'], $VAL['DS'], "AVERAGE" ); 
 	# "normalize" graph values
