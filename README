@@ -1,4 +1,3 @@
-
 -------------------------------------------------------------------------------
 CUSTOM CHECK-NETAPP PNP4NAGIOS TEMPLATES
 SETUP INSTRUCTIONS 
@@ -22,7 +21,7 @@ IMPORTANT: These templates are provided as they are. We can not support them.
 -------------------------------------------------------------------------------
 
 These instructions help you in installing the customized pnp4nagios templates in your nagios environment.
-The templates are built up in this manner:
+The template names are built up in this manner:
 
 <command_name>.php
 
