@@ -1,9 +1,7 @@
 -------------------------------------------------------------------------------
 CUSTOM CHECK-NETAPP PNP4NAGIOS TEMPLATES
-SETUP INSTRUCTIONS 
 -------------------------------------------------------------------------------
 Copyright (c) 2011 Ingo LANTSCHNER (http://netapp-monitoring.info)
-
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
@@ -20,29 +18,43 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 IMPORTANT: These templates are provided as they are. We can not support them.
 -------------------------------------------------------------------------------
 
-These instructions help you in installing the customized pnp4nagios templates in your nagios environment.
+
+-------------------------------------------------------------------------------
+SETUP INSTRUCTIONS 
+-------------------------------------------------------------------------------
+
+These instructions describe installing the customized pnp4nagios templates 
+in your nagios environment.
+
 The template names are built up in this manner:
 
 <command_name>.php
 
-PNP4Nagios will automatically select the template with same name as the check plugin command_name.
+PNP4Nagios will automatically select the template with same name as the check-
+plugin command_name.
 
 Step by step instructions:
 
-1. Check your version of pnp4nagios.If the directory "/usr/local/nagios/etc/pnp" exists, you got a 0.4.x pnp4nagios installation.
+1. Check your version of pnp4nagios.If the directory "/usr/local/nagios/etc/pnp"
+   exists, you got a 0.4.x pnp4nagios installation.
    Refer to http://docs.pnp4nagios.org/pnp-0.6/upgrade for upgrade instructions.
-2. Copy all templates (check-netapp-PerfCpu.php, etc.) to the existing pnp4nagios directory "templates", at mostly /usr/local/pnp4nagios/share/templates.
+2. Copy all templates (check-netapp-PerfCpu.php, etc.) to the existing 
+   pnp4nagios directory "templates", at mostly 
+   /usr/local/pnp4nagios/share/templates.
    Please check your configuration paths for pnp4nagios.
-3. set the permissions on the templates to 644, for example "chmod 644 check-netapp-*.php". 
-   Owner shoud be the user for the nagios process.
+3. Set the permissions on the templates to 644
+   For example "chmod 644 check-netapp-*.php". 
+   Owner should be the user for the nagios process.
 4. Please adapt the given "netapp.cfg" for command configurations.
-5. Restart nagios processes and check the graphs in your browser at http://your.nagioshost/pnp4nagios/ 
-   or/and link them via an action_url, please check the given netapp.cfg-template.
+5. Restart nagios processes and check the graphs in your browser at 
+   http://your.nagioshost/pnp4nagios/ 
+   or link them via an action_url.
+   The deliverd netapp.cfg gives you an example on how to use an action_url.
 
 
-###############################################################################
-
+-------------------------------------------------------------------------------
 TROUBLESHOOTING
+-------------------------------------------------------------------------------
 
 Problem: You are getting an Error instead of a graph.
 
@@ -51,4 +63,3 @@ You should find them in /usr/local/pnp4nagios/var/perfdata/<hostname>
 (path may vary depending on your configuration)
 
 -------------------------------------------------------------------------------
-
